@@ -5,7 +5,6 @@ import com.ingenico.lar.calculadora.Operation.*
 class CalculatorEngine {
 
     private var currentInput: String = "0"
-    private var currentValue: Double = 0.0
     private var storedValue: Double? = null
     private var currentOperation: Operation? = null
 
@@ -42,6 +41,7 @@ class CalculatorEngine {
 
     fun clear(){
 
+        currentInput = "0"
         storedValue = null
         currentOperation = null
         isNewInput = true
